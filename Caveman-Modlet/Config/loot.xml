@@ -1,0 +1,3 @@
+<configs>
+    <set xpath="//lootgroup[@name='groupBirdNest']/item[@name='foodEgg']/@prob">1</set>
+</configs>

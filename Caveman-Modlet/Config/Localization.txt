@@ -1,0 +1,10 @@
+Key,Source,Context,Changes,English
+meleeToolPickaxeStoneJW, items, Tools, New, "Stone Pickaxe"
+meleeToolPickaxeStoneJWDesc, items, Tools, New, "This tool is a basic stone pickaxe."
+meleeToolPickaxeStoneJW, recipes, Tools, New, "Stone Pickaxe Recipe"
+meleeToolPickaxeStoneJWDesc, recipes, Tools, New, "Lets you build the Stone Pickaxe."
+
+
+
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<ModInfo>
+		<Name value="Caveman-Modlet"/>
+		<Description value="Remove Trash, mod game to make it fit for Caveman style survival"/>
+		<Author value="Joshua Williams"/>
+		<Version value="1.0"/>
+	</ModInfo>
+</xml>

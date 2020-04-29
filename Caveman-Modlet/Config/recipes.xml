@@ -1,0 +1,110 @@
+<configs>
+
+<append xpath="/recipes">
+    <recipe name="meleeToolPickaxeStoneJW" count="1" tags="perkMiner69r">
+	   <ingredient name="resourceRockSmall" count="5"/>
+	   <ingredient name="resourceYuccaFibers" count="5"/>
+	   <ingredient name="resourceWood" count="2"/>
+    </recipe>
+    
+    <!--Basic Recipe change hoping it will allow it into the campfire-->
+    <recipe name="toolCookingPot" count="1">
+	<ingredient name="resourceClayLump" count="15"/>
+	</recipe>
+
+	<recipe name="toolCookingGrill" count="1">
+	<ingredient name="resourceWood" count="10"/>
+	<ingredient name="resourceClayLump" count="5"/>
+	<ingredient name="resourceYuccaFibers" count="10"/>
+	</recipe>
+	<!-- Glass Jars -->
+	<recipe name="drinkJarEmpty" count="1">
+	<ingredient name="resourceClayLump" count="10"/>
+	</recipe>
+	<!--First Aid Bandage-->
+	<recipe name="medicalFirstAidBandage" count="1">
+	<ingredient name="medicalAloeCream" count="1"/>
+	<ingredient name="resourceCloth" count="2"/>
+	</recipe>
+
+    <!-- Change Farm Plot Recipe to use bones instead of rotting flesh-->
+    <recipe name="farmPlotBlockPlayer" count="1">
+	   <ingredient name="resourceClayLump" count="50"/>
+	   <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	   <ingredient name="resourceWood" count="4"/>
+	   <ingredient name="resourceBone" count="4"/>
+    </recipe>
+
+    <!-- Change leather armor recipies to use Plant Fibers and cloth instead of Duct Tape and Sewing Kits-->
+    <recipe name="armorLeatherBoots" count="1" tags="learnable,perkLightArmor">
+	<ingredient name="resourceLeather" count="5"/>
+	<ingredient name="resourceYuccaFibers" count="25"/>
+	<ingredient name="resourceCloth" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceCloth"/>
+	</effect_group>
+	</recipe>
+
+	<recipe name="armorLeatherChest" count="1" tags="learnable,perkLightArmor">
+	<ingredient name="resourceLeather" count="5"/>
+	<ingredient name="resourceYuccaFibers" count="25"/>
+	<ingredient name="resourceCloth" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceCloth"/>
+	</effect_group>
+	</recipe>
+
+	<recipe name="armorLeatherGloves" count="1" tags="learnable,perkLightArmor">
+	<ingredient name="resourceLeather" count="5"/>
+	<ingredient name="resourceYuccaFibers" count="25"/>
+	<ingredient name="resourceCloth" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceCloth"/>
+	</effect_group>
+	</recipe>
+
+	<recipe name="armorLeatherHood" count="1" tags="learnable,perkLightArmor">
+	<ingredient name="resourceLeather" count="5"/>
+	<ingredient name="resourceYuccaFibers" count="25"/>
+	<ingredient name="resourceCloth" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceCloth"/>
+	</effect_group>
+	</recipe>
+
+	<recipe name="armorLeatherPants" count="1" tags="learnable,perkLightArmor">
+	<ingredient name="resourceLeather" count="5"/>
+	<ingredient name="resourceYuccaFibers" count="25"/>
+	<ingredient name="resourceCloth" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceCloth"/>
+	</effect_group>
+	</recipe>
+
+	<!-- Change Padded Armor recipies to use Plant Fibers instead of Duct Tape-->
+	<recipe name="armorClothBoots" count="1" tags="perkLightArmor">
+	<ingredient name="resourceCloth" count="5"/>
+	<ingredient name="resourceYuccaFibers" count="10"/>
+	</recipe>
+
+	<recipe name="armorClothGloves" count="1" tags="perkLightArmor">
+	<ingredient name="resourceCloth" count="5"/>
+	<ingredient name="resourceYuccaFibers" count="10"/>
+	</recipe>
+
+	<recipe name="armorClothHat" count="1" tags="perkLightArmor">
+	<ingredient name="resourceCloth" count="5"/>
+	<ingredient name="resourceYuccaFibers" count="10"/>
+	</recipe>
+
+	<recipe name="armorClothJacket" count="1" tags="perkLightArmor">
+	<ingredient name="resourceCloth" count="5"/>
+	<ingredient name="resourceYuccaFibers" count="10"/>
+	</recipe>
+
+	<recipe name="armorClothPants" count="1" tags="perkLightArmor">
+	<ingredient name="resourceCloth" count="5"/>
+	<ingredient name="resourceYuccaFibers" count="10"/>
+	</recipe>
+</append>    
+</configs>
