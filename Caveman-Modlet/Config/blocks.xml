@@ -1,4 +1,5 @@
 <configs>
+<!-- This removes random spawning loot containers-->
 <remove xpath="/blocks/block[@name='cntTrashPile01']"/>
 <remove xpath="/blocks/block[@name='cntTrashPile02']"/>
 <remove xpath="/blocks/block[@name='cntTrashPile03']"/>
@@ -15,6 +16,7 @@
 <remove xpath="/blocks/block[@name='cntBackpack03']"/>
 <remove xpath="/blocks/block[@name='cntSuitcase']"/>
 <!-- Stop the random backpacks from spawning -->
+<!--this was giving us trouble, not sure if it is a random loot container or something else-->
 <!--<remove xpath="/blocks/block[@name='cntBackpack01']"/>-->
 <!-- Remove destroyed car frames from the desert biome-->
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage0Master']"/>
