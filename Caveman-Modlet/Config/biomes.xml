@@ -1,5 +1,5 @@
 <config>
-
+<!--This adds wild crops to the forest biome-->
 <append xpath="//biomes/biome[@name='pine_forest']/decorations">
     <decoration type="block" blockname="plantedBlueberry3Harvest" prob=".006"/>
     <decoration type="block" blockname="plantedCorn3Harvest" prob=".003"/>
@@ -7,6 +7,7 @@
     <decoration type="block" blockname="plantedMushroom3Harvest" prob=".003"/>
     <decoration type="block" blockname="plantedPumpkin3Harvest" prob=".003"/>
 </append>
+<!--unsure if this is important due to /blocks modification. Increases spawn probability of tree stumps-->
 <set xpath="//decoration[@blockname='treeStump']/@prob">.0003</set>
 
 </config>
