@@ -7,7 +7,7 @@
     <decoration type="block" blockname="plantedMushroom3Harvest" prob=".003"/>
     <decoration type="block" blockname="plantedPumpkin3Harvest" prob=".003"/>
 </append>
-<!--unsure if this is important due to /blocks modification. Increases spawn probability of tree stumps-->
+<!--Increases spawn probability of tree stumps-->
 <set xpath="//decoration[@blockname='treeStump']/@prob">.0003</set>
 
 </config>
