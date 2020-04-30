@@ -1,9 +1,10 @@
 <configs>
 
-<set xpath="//block[contains(@name, 'cnt')]/@prob">0</set>
-<!-- <append xpath="//block">
-   <block name="air" prob="1"/>
-   <block name="plantedBlueberry3Harvest" prob="1"/>
+<remove xpath="//block[contains(@name, 'cnt')]"/>
+<!-- <set xpath="//block[@name='cntTrashPile01']/@prob">0.00001</set> -->
+<append xpath="//placeholder">
+   <block name="air" prob="0.1"/>
+   <block name="plantedBlueberry3Harvest" prob="0.1"/>
 </append>
-     -->
+    
 </configs>
