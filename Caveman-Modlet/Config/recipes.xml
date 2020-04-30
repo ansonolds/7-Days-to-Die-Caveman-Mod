@@ -170,9 +170,105 @@
 <set xpath="//recipe[@name='meleeToolFireaxeSteel']/ingredient[@name='resourceLeather']">50</set>
 <removeattribute xpath="//recipe[@name='meleeToolFireaxeSteel']/@craft_area"/>
 
+<!-- meleeToolKnifeIron edits -->
+<set xpath="//recipe[@name='meleeToolKnifeIron']/@tags">perkDeepCuts</set>
 
+<remove xpath="//recipe[@name='meleeToolKnifeIron']/ingredient[@name='resourceForgedIron']"/>
+<remove xpath="//recipe[@name='meleeToolKnifeIron']/ingredient[@name='resourceDuctTape']"/>
+<append xpath="//recipe[@name='meleeToolKnifeIron']">
+	<ingredient name="resourceScrapIron" count="150"/>
+</append>
+<set xpath="//recipe[@name='meleeToolKnifeIron']/@tags">perkMiner69r</set>
+<set xpath="//recipe[@name='meleeToolKnifeIron']/ingredient[@name='resourceWood']">75</set>
+<set xpath="//recipe[@name='meleeToolKnifeIron']/ingredient[@name='resourceLeather']">50</set>
 
+<!-- meleeKnucklesIron edit-->
+<remove xpath="//recipe[@name='meleeKnucklesIron']/ingredient[@name='resourceForgedIron']"/>
+<remove xpath="//recipe[@name='meleeKnucklesIron']/ingredient[@name='resourceMechanicalParts']"/>
+<remove xpath="//recipe[@name='meleeKnucklesIron']/ingredient[@name='resourceDuctTape']"/>
+<append xpath="//recipe[@name='meleeKnucklesIron']">
+	<ingredient name="resourceScrapIron" count="25"/>
+	<ingredient name="resourceRockSmall" count="50"/>
+</append>
+<set xpath="//recipe[@name='meleeKnucklesIron']/@tags">perkMiner69r</set>
+<!-- <set xpath="//recipe[@name='meleeKnucklesIron']/ingredient[@name='resourceWood']">75</set> -->
+<set xpath="//recipe[@name='meleeKnucklesIron']/ingredient[@name='resourceLeather']">30</set>
 
+<!-- meleeKnucklesSteel edit-->
+<remove xpath="//recipe[@name='meleeKnucklesSteel']/ingredient[@name='resourceForgedSteel']"/>
+<remove xpath="//recipe[@name='meleeKnucklesSteel']/ingredient[@name='meleeKnucklesSteelParts']"/>
+<remove xpath="//recipe[@name='meleeKnucklesSteel']/ingredient[@name='resourceDuctTape']"/>
+<append xpath="//recipe[@name='meleeKnucklesSteel']">
+	<ingredient name="resourceScrapIron" count="100"/>
+	<ingredient name="meleeKnucklesIron" count="1"/>
+</append>
+<set xpath="//recipe[@name='meleeToolFireaxeSteel']/@tags">perkMiner69r</set>
+<set xpath="//recipe[@name='meleeToolFireaxeSteel']/ingredient[@name='resourceLeather']">50</set>
+<removeattribute xpath="//recipe[@name='meleeToolFireaxeSteel']/@craft_area"/>
+
+<!-- meleeThrownSpearIron edit-->
+<remove xpath="//recipe[@name='meleeThrownSpearIron']/ingredient[@name='resourceForgedIron']"/>
+<remove xpath="//recipe[@name='meleeThrownSpearIron']/ingredient[@name='resourceDuctTape']"/>
+<append xpath="//recipe[@name='meleeThrownSpearIron']">
+	<ingredient name="resourceScrapIron" count="25"/>
+	<ingredient name="resourceRockSmall" count="50"/>
+</append>
+<set xpath="//recipe[@name='meleeThrownSpearIron']/@tags">perkMiner69r</set>
+<set xpath="//recipe[@name='meleeThrownSpearIron']/ingredient[@name='resourceWood']">50</set>
+<set xpath="//recipe[@name='meleeThrownSpearIron']/ingredient[@name='resourceLeather']">30</set>
+
+<!-- meleeThrownSpearSteel edit-->
+<remove xpath="//recipe[@name='meleeThrownSpearSteel']/ingredient[@name='resourceForgedSteel']"/>
+<remove xpath="//recipe[@name='meleeThrownSpearSteel']/ingredient[@name='meleeThrownSpearSteelParts']"/>
+<remove xpath="//recipe[@name='meleeThrownSpearSteel']/ingredient[@name='resourceDuctTape']"/>
+<append xpath="//recipe[@name='meleeThrownSpearSteel']">
+	<ingredient name="resourceScrapIron" count="100"/>
+	<ingredient name="meleeThrownSpearIron" count="1"/>
+</append>
+<set xpath="//recipe[@name='meleeThrownSpearSteel']/@tags">perkMiner69r</set>
+<set xpath="//recipe[@name='meleeThrownSpearSteel']/ingredient[@name='resourceLeather']">50</set>
+<set xpath="//recipe[@name='meleeThrownSpearIron']/ingredient[@name='resourceWood']">50</set>
+<removeattribute xpath="//recipe[@name='meleeThrownSpearSteel']/@craft_area"/>
+
+<!-- gunBowPrimitive edit-->
+<set xpath="//recipe[@name='gunBowPrimitive']/ingredient[@name='resourceWood']">10</set>
+<set xpath="//recipe[@name='gunBowPrimitive']/ingredient[@name='resourceYuccaFibers']">20</set>
+
+<!-- gunBowWooden edit-->
+<remove xpath="//recipe[@name='gunBowWooden']/ingredient[@name='gunBowWoodenParts']"/>
+<remove xpath="//recipe[@name='gunBowWooden']/ingredient[@name='resourceDuctTape']"/>
+<append xpath="//recipe[@name='gunBowWooden']">
+	<ingredient name="gunBowPrimitive" count="1"/>
+</append>
+<set xpath="//recipe[@name='gunBowWooden']/@tags">perkMiner69r</set>
+<set xpath="//recipe[@name='gunBowWooden']/ingredient[@name='resourceLeather']">50</set>
+<set xpath="//recipe[@name='meleeThrownSpearIron']/ingredient[@name='resourceWood']">50</set>>
+
+<!-- Future Work -->
+<!-- <recipe name="ammoArrowFlaming" count="1" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceCloth" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+</recipe> -->
+
+<!-- ammoArrowIron edit-->
+<append xpath="//recipe[@name='ammoArrowIron']">
+	<ingredient name="resourceYuccaFibers" count="2"/>
+	<ingredient name="resourceScrapIron" count="2"/>
+</append>
+<remove xpath="//recipe[@name='ammoArrowIron']/ingredient[@name='resourceArrowHeadIron']"/>
+
+<!-- ammoArrowSteelAP edit-->
+<append xpath="//recipe[@name='ammoArrowSteelAP']">
+	<ingredient name="resourceYuccaFibers" count="4"/>
+	<ingredient name="resourceScrapIron" count="4"/>
+	<ingredient name="resourceWood" count="2"/>
+	<ingredient name="resourceFeather" count="1"/>
+</append>
+<remove xpath="//recipe[@name='ammoArrowSteelAP']/ingredient[@name='resourceArrowHeadSteelAP']"/>
+<remove xpath="//recipe[@name='ammoArrowSteelAP']/ingredient[@name='resourceScrapPolymers']"/>
 
 
 <!-- Attempt to Remove all other recipes we don't care about -->
@@ -181,6 +277,20 @@
 <remove xpath="//recipe[@craft_area='chemistryStation']"/>
 <remove xpath="//recipe[@craft_area='tablesaw']"/>
 <remove xpath="//recipe[@name='forge']"/>
+<remove xpath="//recipe[@name='ironDoor1_v1']"/>
+<remove xpath="//recipe[@name='ladderMetal']"/>
+<remove xpath="//recipe[@name='window03Wood']"/>
+<remove xpath="//recipe[@name='workbench']"/>
+<remove xpath="//recipe[@name='resourceMetalPipe']"/>
+<remove xpath="//recipe[@name='ammoJunkTurret']"/>
+<!-- <remove xpath="//recipe[@name='ammoJunkTurret']"/> -->
+<remove xpath="//recipe[contains(@name, 'Sofa')]"/>
+<remove xpath="//recipe[contains(@name, 'Blunderbuss')]"/>
+<remove xpath="//recipe[contains(@name, 'Bolt')]"/>
+<remove xpath="//recipe[contains(@name, 'Bundle')]"/>
+
+
+
 <!-- <remove xpath="//recipe[contains(@tags, 'workbenchCrafting')]"/>
 <remove xpath="//recipe[contains(@tags, 'perkGreaseMonkey')]"/>
 <remove xpath="//recipe[contains(@tags, 'resourceForgedIron')]"/> -->
