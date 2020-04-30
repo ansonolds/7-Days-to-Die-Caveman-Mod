@@ -1,6 +1,8 @@
 Key,Source,Context,Changes,English
 toolCookingPot, items, Tools, "", "Clay Cooking Pot"
 toolCookingPotDesc, items, Tools, "", "A clay pot you asshat, you can't do much..."
+toolCookingPot, recipe, Food, "", "Clay Cooking Pot"
+toolCookingPotDesc, recipe, Food, "", "A clay pot you asshat, you can't do much..."
 toolCookingGrill, items, Tools, "", "Wooden Cooking Grill"
 toolCookingGrillDesc, items, Tools, "", "HOW DOES THIS WORK!?"
 meleeToolPickaxeIron, items, Tools, "", "Stone Pickaxe"
