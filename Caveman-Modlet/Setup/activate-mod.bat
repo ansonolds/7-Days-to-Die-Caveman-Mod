@@ -9,7 +9,7 @@ if exist "C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die\Mods" (
     mkdir "C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die\Mods"
     ECHO "Created C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die\Mods..."
 )
-ECHO "Linking required files..."
+ECHO "Copying required files..."
 for %%a in ("%cd%\..\..\Caveman-Modlet\") do set "resolvedDir=%%~fa"
 ECHO %resolvedDir%
 xcopy %resolvedDir% "C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die\Mods\Caveman-Modlet\" /E
