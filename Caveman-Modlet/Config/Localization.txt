@@ -1,12 +1,18 @@
 Key,Source,Context,Changes,English
-meleeToolPickaxeStoneJW, items, Tools, New, "Stone Pickaxe"
-meleeToolPickaxeStoneJWDesc, items, Tools, New, "This tool is a basic stone pickaxe."
-meleeToolPickaxeStoneJW, recipes, Tools, New, "Stone Pickaxe Recipe"
-meleeToolPickaxeStoneJWDesc, recipes, Tools, New, "Lets you build the Stone Pickaxe."
 toolCookingPot, items, Tools, "", "Clay Cooking Pot"
 toolCookingPotDesc, items, Tools, "", "A clay pot you asshat, you can't do much..."
 toolCookingGrill, items, Tools, "", "Wooden Cooking Grill"
 toolCookingGrillDesc, items, Tools, "", "HOW DOES THIS WORK!?"
-
-
+meleeToolPickaxeIron, items, Tools, "", "Stone Pickaxe"
+meleeToolPickaxeIronDesc, item, Tools, "", "Hey! You learned how to make something useful... but incredibly inefficient with resources..."
+meleeToolPickaxeSteel, item, Tools, "", "Scrap Iron Axe"
+meleeToolPickaxeSteelDesc, item, Tools, "", "Finally you have entered the... scrap iron age..."
+meleeToolShovelIron, items, Tools, "", "Improved Stone Shovel"
+meleeToolShovelIronDesc, items, Tools, "", "Hey! You learned how to make something useful... but incredibly inefficient with resources..."
+meleeToolShovelSteel, items, Tools, "", "Scrap Iron Shovel"
+meleeToolShovelSteelDesc, items, Tools, "", "Finally you have entered the... scrap iron age..."
+meleeToolFireaxeIron, items, Tools, "", "Improved Stone Axe"
+meleeToolFireaxeIronDesc, items, Tools, "", "Hey! You learned how to make something useful... but incredibly inefficient with resources..."
+meleeToolFireaxeSteel, items, Tools, "", "Scrap Iron Axe"
+meleeToolFireaxeSteelDesc, items, Tools, "", "Finally you have entered the... scrap iron age..."
 
