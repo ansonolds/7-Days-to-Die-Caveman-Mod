@@ -1,0 +1,8 @@
+
+
+
+<configs>
+
+<set xpath="//propery[@name='LootDropProb']/@prob">0</set>
+    
+</configs>

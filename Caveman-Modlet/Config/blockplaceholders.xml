@@ -1,0 +1,9 @@
+<configs>
+
+<set xpath="//block[contains(@name, 'cnt')]/@prob">0</set>
+<!-- <append xpath="//block">
+   <block name="air" prob="1"/>
+   <block name="plantedBlueberry3Harvest" prob="1"/>
+</append>
+     -->
+</configs>

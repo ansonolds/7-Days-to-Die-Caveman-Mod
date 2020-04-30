@@ -1,13 +1,24 @@
-<config>
+ <configs>
 <!--This adds wild crops to the forest biome-->
-<append xpath="//biomes/biome[@name='pine_forest']/decorations">
+
+<append xpath="//biomes/biome[@name='pine_forest']//decoration">
     <decoration type="block" blockname="plantedBlueberry3Harvest" prob=".006"/>
     <decoration type="block" blockname="plantedCorn3Harvest" prob=".003"/>
     <decoration type="block" blockname="plantedPotato3Harvest" prob=".003"/>
     <decoration type="block" blockname="plantedMushroom3Harvest" prob=".003"/>
     <decoration type="block" blockname="plantedPumpkin3Harvest" prob=".003"/>
 </append>
-<!--Increases spawn probability of tree stumps-->
-<set xpath="//decoration[@blockname='treeStump']/@prob">.0003</set>
 
-</config>
+    
+    <!-- <set xpath="//biomes/biome//decoration[@name='carWrecksRandomHelper']/@prob">0</set>
+    <set xpath="//biomes/biome//decoration[@name='cntForestRandomLootHelper']/@prob">0</set>
+    <set xpath="//biomes/biome//decoration[@name='carsRandomHelper']/@prob">0</set>
+    <set xpath="//biomes/biome//decoration[@name='cntWastelandRandomLootHelper']/@prob">0</set>
+    <set xpath="//biomes/biome//decoration[@name='cntDesertRandomLootHelper']/@prob">0</set>
+    <set xpath="//biomes/biome//decoration[@name='cntBurntForestRandomLootHelper']/@prob">0</set>
+    <set xpath="//biomes/biome//decoration[@name='cntStreetRandomLootHelper']/@prob">0</set> -->
+    <remove xpath="//decoration[contains(@blockname, 'RandomLootHelper')]"/>
+    <remove xpath="//decoration[contains(@blockname, 'car')]"/>
+    <set xpath="//decoration[@blockname='treeStump']/@prob">.003</set>
+
+</configs>
