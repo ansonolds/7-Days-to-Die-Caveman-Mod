@@ -3,6 +3,6 @@
 
 <configs>
 
-<set xpath="//propery[@name='LootDropProb']/@prob">0</set>
+<set xpath="//property[@name='LootDropProb']/@prob">0</set>
     
 </configs>
