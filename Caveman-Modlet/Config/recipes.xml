@@ -9,15 +9,15 @@
     
 <!--Basic Recipe changes-->
 	<!--Cooking Pot-->
-    	<recipe name="toolCookingPot" count="1">
+    	<!-- <recipe name="toolCookingPot" count="1">
 	<ingredient name="resourceClayLump" count="15"/>
-	</recipe>
+	</recipe> -->
 	<!--Cooking Grill-->
-	<recipe name="toolCookingGrill" count="1">
+	<!-- <recipe name="toolCookingGrill" count="1">
 	<ingredient name="resourceWood" count="10"/>
 	<ingredient name="resourceClayLump" count="5"/>
 	<ingredient name="resourceYuccaFibers" count="10"/>
-	</recipe>
+	</recipe> -->
 	<!-- Glass Jars -->
 	<recipe name="drinkJarEmpty" count="1">
 	<ingredient name="resourceClayLump" count="10"/>
@@ -107,5 +107,38 @@
 	<ingredient name="resourceCloth" count="5"/>
 	<ingredient name="resourceYuccaFibers" count="10"/>
 	</recipe>
-</append>    
+</append>
+
+<!-- Brad & Josh's Edits -->
+<!-- Cooking Pot edit -->
+<set xpath="//recipe[@name='toolCookingPot']/@craft_area">campfire</set>
+<!-- <set xpath="//recipe[@name='toolCookingPot']/ingredient[@name='resourceClayLump']/@count">25</set> -->
+<remove xpath="//recipe[@name='toolCookingPot']/ingredient[@name='unit_clay']"/>
+<remove xpath="//recipe[@name='toolCookingPot']/ingredient[@name='unit_iron']"/>
+<removeattribute xpath="//recipe[@name='toolCookingPot']/@material_based"/>
+<append xpath="//recipe[@name='toolCookingPot']">
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="resourceScrapIron" count="25"/>
+	<ingredient name="resourceClayLump" count="25"/>
+</append>
+
+<set xpath="//recipe[@name='toolCookingPot']/@tags">perkMasterChef</set>
+
+<!-- toolCookingGrill edit -->
+<set xpath="//recipe[@name='toolCookingGrill']/@craft_area">campfire</set>
+<!-- <set xpath="//recipe[@name='toolCookingGrill']/ingredient[@name='resourceClayLump']/@count">25</set> -->
+<removeattribute xpath="//recipe[@name='toolCookingGrill']/@material_based"/>
+<remove xpath="//recipe[@name='toolCookingGrill']/ingredient[@name='unit_iron']"/>
+<remove xpath="//recipe[@name='toolCookingGrill']/ingredient[@name='unit_clay']"/>
+<append xpath="//recipe[@name='toolCookingGrill']">
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="resourceWood" count="25"/>
+	<ingredient name="resourceScrapIron" count="25"/>
+	<ingredient name="resourceClayLump" count="25"/>
+	
+</append>
+<set xpath="//recipe[@name='toolCookingGrill']/@tags">perkMasterChef</set>
+
+
+
 </configs>
