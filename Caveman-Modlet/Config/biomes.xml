@@ -11,7 +11,7 @@
 
     <remove xpath="//decoration[contains(@blockname, 'cnt')]"/>
     <remove xpath="//decoration[contains(@blockname, 'car')]"/>
-    <remove xpath="//decoration[contains(@blockname, 'street')]"/>
+    <remove xpath="//decoration[contains(@blockname, 'Street')]"/>
     <set xpath="//decoration[@blockname='treeStump']/@prob">.0006</set>
 
 </configs>
