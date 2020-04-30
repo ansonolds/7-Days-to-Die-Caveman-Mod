@@ -290,10 +290,4 @@
 <remove xpath="//recipe[contains(@name, 'Bundle')]"/>
 
 
-
-<!-- <remove xpath="//recipe[contains(@tags, 'workbenchCrafting')]"/>
-<remove xpath="//recipe[contains(@tags, 'perkGreaseMonkey')]"/>
-<remove xpath="//recipe[contains(@tags, 'resourceForgedIron')]"/> -->
-
-
 </configs>
