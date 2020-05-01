@@ -1,3 +1,5 @@
 <configs>
+<!-- Remove Radiated Zombies -->
 <setattribute xpath="//entitygroup/entity[contains(@name, 'Radiated')]" name='prob'>0</setattribute>
+
 </configs>

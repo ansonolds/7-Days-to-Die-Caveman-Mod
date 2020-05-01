@@ -1,8 +1,5 @@
-
-
-
 <configs>
-
+<!-- Remove the ability for zombies to drop loot -->
 <set xpath="//property[@name='LootDropProb']/@value">0</set>
     
 </configs>
