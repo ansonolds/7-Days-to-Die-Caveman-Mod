@@ -1,10 +1,13 @@
 <configs>
 
+<!-- Remove all container blocks. -->
+<!-- This was easier than manually diabling every single item we didn't need or want. -->
+<!-- I had to replace the blocks with something because a group cannot be empty-->
 <remove xpath="//block[contains(@name, 'cnt')]"/>
-<!-- <set xpath="//block[@name='cntTrashPile01']/@prob">0.00001</set> -->
 <append xpath="//placeholder">
-   <block name="air" prob="0.1"/>
-   <block name="plantedBlueberry3Harvest" prob="0.1"/>
+   <!-- <block name="air" prob="0.1"/>
+   <block name="plantedBlueberry3Harvest" prob="0.1"/> -->
+   <block name="cntBirdnest" prob="1"/>
 </append>
     
 </configs>
