@@ -1,17 +1,20 @@
  <configs>
-<!--This adds wild crops to the forest biome-->
-
-<append xpath="//biomes/biome[@name='pine_forest']//decorations">
-    <decoration type="block" blockname="plantedBlueberry3Harvest" prob=".006"/>
-    <decoration type="block" blockname="plantedCorn3Harvest" prob=".003"/>
-    <decoration type="block" blockname="plantedPotato3Harvest" prob=".003"/>
-    <decoration type="block" blockname="plantedMushroom3Harvest" prob=".003"/>
-    <decoration type="block" blockname="plantedPumpkin3Harvest" prob=".003"/>
-</append>
 
     <remove xpath="//decoration[contains(@blockname, 'cnt')]"/>
     <remove xpath="//decoration[contains(@blockname, 'car')]"/>
-    <remove xpath="//decoration[contains(@blockname, 'Street')]"/>
+    <!-- <remove xpath="//decoration[contains(@blockname, 'Street')]"/> -->
     <set xpath="//decoration[@blockname='treeStump']/@prob">.0006</set>
+    <!--This adds wild crops to the forest biome-->
+    <append xpath="//biomes/biome[@name='pine_forest']//decorations">
+        <decoration type="block" blockname="plantedBlueberry3Harvest" prob=".0015"/>
+        <decoration type="block" blockname="plantedCorn3Harvest" prob=".0015"/>
+        <decoration type="block" blockname="plantedPotato3Harvest" prob=".0015"/>
+        <decoration type="block" blockname="plantedMushroom3Harvest" prob=".0015"/>
+        <decoration type="block" blockname="plantedPumpkin3Harvest" prob=".0015"/>
+        <decoration type="block" blockname="plantedPumpkin3Harvest" prob=".0015"/>
+    </append>
+    <append xpath="//decorations">
+        <decoration type="block" blockname="cntBirdnest" prob=".006"/>
+    </append>
 
 </configs>
