@@ -1,0 +1,3 @@
+<config>
+<set xpath="//biome/spawn[contains(@entitygroup, 'Animal')]/@maxcount">10</set>
+</config>

@@ -1,71 +1,20 @@
 <configs>
-<!-- This removes random spawning loot containers-->
-<remove xpath="/blocks/block[@name='cntTrashPile01']"/>
-<remove xpath="/blocks/block[@name='cntTrashPile02']"/>
-<remove xpath="/blocks/block[@name='cntTrashPile03']"/>
-<remove xpath="/blocks/block[@name='cntTrashPile04']"/>
-<remove xpath="/blocks/block[@name='cntTrashPile05']"/>
-<remove xpath="/blocks/block[@name='cntTrashPile06']"/>
-<remove xpath="/blocks/block[@name='cntTrashPile07']"/>
-<remove xpath="/blocks/block[@name='cntTrashPile08']"/>
-<remove xpath="/blocks/block[@name='cntTrashPile09']"/>
-<remove xpath="/blocks/block[@name='cntDuffle01']"/>
-<remove xpath="/blocks/block[@name='cntSportsBag01']"/>
-<remove xpath="/blocks/block[@name='cntSportsBag02']"/>
-<remove xpath="/blocks/block[@name='cntPurse01']"/>
-<remove xpath="/blocks/block[@name='cntBackpack03']"/>
-<remove xpath="/blocks/block[@name='cntSuitcase']"/>
-<!-- Stop the random backpacks from spawning -->
-<!--this was giving us trouble, not sure if it is a random loot container or something else-->
-<!--<remove xpath="/blocks/block[@name='cntBackpack01']"/>-->
-<!-- Remove destroyed car frames from the desert biome-->
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage0Master']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1Master']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage2Master']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage0v01']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage0v02']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage0v03']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage0v04']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage0v05']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage0v06']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage0v07']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage0v08']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1v01']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1v02']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1v03']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1v04']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1v05']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1v06']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1v07']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1v08']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage2v01']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage2v02']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage2v03']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage2v04']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage2v05']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage2v06']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage2v07']"/>
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage2v08']"/>
+<!-- Honey Modifications -->
+<set xpath="/blocks/block[@name='treeStump']/drop[@event='Destroy' and @name='foodHoney']/@count">2</set>
+<set xpath="/blocks/block[@name='treeStump']/drop[@event='Destroy' and @name='foodHoney']/@prob">1</set>
+<set xpath="/blocks/block[@name='treeMaster']/drop[@event='Harvest' and @name='foodHoney']/@prob">1</set>
+<!-- <removeattribute xpath="/blocks/block[@name='treeMaster']/@tag"/> -->
 
-<!-- Increase Probability of honey spawning in stump to 1 -->
-<remove xpath="/blocks/block[@name='treeStump']"/>
-<append xpath="/blocks">
-    <block name="treeStump">
-	<property name="Material" value="MtreeWoodSmall"/>
-	<property name="Shape" value="ModelEntity"/>
-	<property name="Path" value="solid"/>
-	<property name="Model" value="#Entities/Trees?Prefabs/Stump.prefab"/>
-	<property name="ModelOffset" value="0,0,0"/>
-	<property name="ImposterDontBlock" value="true"/>
-	<property name="IsTerrainDecoration" value="true"/>
-	<property name="BigDecorationRadius" value="3"/>
-	<property name="IsPlant" value="true"/> <!-- it shall never be placed on rocks -->
-	<drop event="Harvest" name="resourceWood" count="20,30" tag="oreWoodHarvest"/>
-	<drop event="Destroy" name="foodHoney" count="1" prob="1"/>
-	<property name="FilterTags" value="foutdoor,ftrees"/>
-	<property name="SortOrder1" value="a0d0"/>
-    </block>
-    
+
+<!-- Add Feathers to trees where nests would actually be. This is needed because I previously disabled all container blocks include bird nests.-->
+<append xpath="/blocks/block[starts-with(@name, 'tree')]">
+    <drop event="Harvest" name="resourceFeather" count="5,15" tag="oreWoodHarvest"/>
 </append>
-    
+
+<append xpath="/blocks/block[@name='cntBirdnest']">
+    <drop event="Harvest" name="foodEgg" count="1,3" prob="1" tag="allHarvest"/>
+</append>
+
+<!-- Modify the nest drop statistics -->
+
 </configs>
