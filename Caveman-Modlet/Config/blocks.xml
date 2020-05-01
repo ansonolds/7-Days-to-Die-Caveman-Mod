@@ -1,5 +1,20 @@
 <configs>
+<!-- Honey Modifications -->
 <set xpath="/blocks/block[@name='treeStump']/drop[@event='Destroy' and @name='foodHoney']/@count">2</set>
-<set xpath="/blocks/block[@name='treeStump']/drop[@event='Destroy' and @name='foodHoney']/@prob">2</set>
-    
+<set xpath="/blocks/block[@name='treeStump']/drop[@event='Destroy' and @name='foodHoney']/@prob">1</set>
+<set xpath="/blocks/block[@name='treeMaster']/drop[@event='Harvest' and @name='foodHoney']/@prob">1</set>
+<!-- <removeattribute xpath="/blocks/block[@name='treeMaster']/@tag"/> -->
+
+
+<!-- Add Feathers to trees where nests would actually be. This is needed because I previously disabled all container blocks include bird nests.-->
+<append xpath="/blocks/block[starts-with(@name, 'tree')]">
+    <drop event="Harvest" name="resourceFeather" count="5,15" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntBirdnest']">
+    <drop event="Harvest" name="foodEgg" count="1,3" prob="1" tag="allHarvest"/>
+</append>
+
+<!-- Modify the nest drop statistics -->
+
 </configs>
