@@ -2,6 +2,16 @@
 <!-- New Creations -->
 
 <!-- Brad & Josh's Edits -->
+
+
+<!--Bucket edit-->
+<remove xpath="//recipe[@name='bucketEmpty']/ingredient[@name='resourceForgedIron']"/>
+<append xpath="//recipe[@name='bucketEmpty']">
+	<ingredient name="resourceClayLump" count="20"/>
+	<ingredient name="resourceWood" count="30"/>
+	<ingredient name="resourceYuccaFibers" count="40"/>
+</append>
+
 <!-- Cooking Pot edit -->
 <set xpath="//recipe[@name='toolCookingPot']/@craft_area">campfire</set>
 <!-- <setattribute xpath="//recipe[@name='toolCookingPot']" name='craft_tool'>toolCookingPot</setattribute> -->
@@ -185,7 +195,7 @@
 	<ingredient name="meleeToolKnifeBone" count="150"/>
 	
 </append>
-<set xpath="//recipe[@name='meleeToolKnifeIron']/@tags">perkMiner69r</set>
+<set xpath="//recipe[@name='meleeToolKnifeIron']/@tags">perkDeepCuts</set>
 <set xpath="//recipe[@name='meleeToolKnifeIron']/ingredient[@name='resourceWood']/@count">75</set>
 <set xpath="//recipe[@name='meleeToolKnifeIron']/ingredient[@name='resourceLeather']/@count">50</set>
 
@@ -198,7 +208,7 @@
 	<ingredient name="resourceRockSmall" count="50"/>
 	<ingredient name="meleeKnucklesLeather" count="1"/>
 </append>
-<set xpath="//recipe[@name='meleeKnucklesIron']/@tags">perkMiner69r</set>
+<set xpath="//recipe[@name='meleeKnucklesIron']/@tags">perkBrawler</set>
 <!-- <set xpath="//recipe[@name='meleeKnucklesIron']/ingredient[@name='resourceWood']">75</set> -->
 <set xpath="//recipe[@name='meleeKnucklesIron']/ingredient[@name='resourceLeather']/@count">30</set>
 
@@ -211,7 +221,7 @@
 	<ingredient name="resourceScrapIron" count="100"/>
 	<ingredient name="meleeKnucklesIron" count="1"/>
 </append>
-<set xpath="//recipe[@name='meleeKnucklesSteel']/@tags">perkMiner69r</set>
+<set xpath="//recipe[@name='meleeKnucklesSteel']/@tags">perkBrawler</set>
 <set xpath="//recipe[@name='meleeKnucklesSteel']/ingredient[@name='resourceLeather']/@count">50</set>
 <removeattribute xpath="//recipe[@name='meleeKnucklesSteel']/@craft_area"/>
 
@@ -223,7 +233,7 @@
 	<ingredient name="resourceRockSmall" count="50"/>
 	<ingredient name="meleeThrownSpearStone" count="1"/>
 </append>
-<set xpath="//recipe[@name='meleeThrownSpearIron']/@tags">perkMiner69r</set>
+<set xpath="//recipe[@name='meleeThrownSpearIron']/@tags">perkJavelinMaster</set>
 <set xpath="//recipe[@name='meleeThrownSpearIron']/ingredient[@name='resourceWood']/@count">50</set>
 <set xpath="//recipe[@name='meleeThrownSpearIron']/ingredient[@name='resourceLeather']/@count">30</set>
 
@@ -235,7 +245,7 @@
 	<ingredient name="resourceScrapIron" count="100"/>
 	<ingredient name="meleeThrownSpearIron" count="1"/>
 </append>
-<set xpath="//recipe[@name='meleeThrownSpearSteel']/@tags">perkMiner69r</set>
+<set xpath="//recipe[@name='meleeThrownSpearSteel']/@tags">perkJavelinMaster</set>
 <set xpath="//recipe[@name='meleeThrownSpearSteel']/ingredient[@name='resourceLeather']/@count">50</set>
 <set xpath="//recipe[@name='meleeThrownSpearIron']/ingredient[@name='resourceWood']/@count">50</set>
 <removeattribute xpath="//recipe[@name='meleeThrownSpearSteel']/@craft_area"/>
@@ -250,7 +260,7 @@
 <append xpath="//recipe[@name='gunBowWooden']">
 	<ingredient name="gunBowPrimitive" count="1"/>
 </append>
-<set xpath="//recipe[@name='gunBowWooden']/@tags">perkMiner69r</set>
+<set xpath="//recipe[@name='gunBowWooden']/@tags">perkArchery</set>
 <set xpath="//recipe[@name='gunBowWooden']/ingredient[@name='resourceLeather']/@count">50</set>
 <set xpath="//recipe[@name='meleeThrownSpearIron']/ingredient[@name='resourceWood']/@count">50</set>>
 
