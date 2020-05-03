@@ -7,7 +7,7 @@
 
 
 <!-- Add Feathers to trees where nests would actually be. This is needed because I previously disabled all container blocks include bird nests.-->
-<append xpath="/blocks/block[starts-with(@name, 'tree')]">
+<append xpath="/blocks/block[starts-with(@name, 'treePlanted')]">
     <drop event="Harvest" name="resourceFeather" count="5,15" tag="oreWoodHarvest"/>
 </append>
 
